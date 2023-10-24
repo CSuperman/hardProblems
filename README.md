@@ -1,2 +1,2 @@
 # hardProblems
-Code parts for hard problems
+Code parts and pieces for hard problems
