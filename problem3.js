@@ -1,3 +1,5 @@
+// height is an array with positive integers
+
 function wtrapped(height) {
   
 // implement zero base case
@@ -27,3 +29,9 @@ function wtrapped(height) {
 
     return waters;
 };
+
+
+// to run it
+wtrapped(height)
+
+// note: don't run with empty data structure
