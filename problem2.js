@@ -25,6 +25,7 @@ function longestPattern(string) {
 
     }
   }
+  //console.log('there are ' + max.length + ' half-patterns and ' + max.length / 2 + ' patterns')
   return max
 }
 
