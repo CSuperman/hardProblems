@@ -1,6 +1,11 @@
 
+// testing could be random inputs within a range
+let string = ")()"
+
 function longestPattern(string) {
-  if (string.length === 0) return 0
+  if (string.length === 0) {
+    return 0
+  }
 
   let max = 0
   let stack = [-1]
@@ -12,14 +17,15 @@ function longestPattern(string) {
     } else {
       stack.pop()
 
-        if (stack.length === 0) {
+      if (stack.length === 0) {
         stack.push(index)
-        } else {
-          max = Math.max(max i - stack[stack.length -1])
-        }
-      
+      } else {
+        max = Math.max(max, index - stack[stack.length - 1])
       }
+
+    }
   }
-  console.log('there are' max.length 'half-patterns and' max.length / 2 'patterns')
   return max
 }
+
+longestPattern(string)
