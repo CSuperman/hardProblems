@@ -1,4 +1,8 @@
+# linked list problem
 
+head = [1, 2, 3, 4, 5]
+
+// node definition
 class Node(object):
   def __init__(self, val=0, next=None):
     self.val = value
@@ -18,3 +22,8 @@ class Answer(object)
       point2 = point2.next
     point2.next = point2.next.next
     return head
+
+# don't forget moewtest cases
+
+
+# output: [1, 2, 3, 5]
