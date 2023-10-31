@@ -1,16 +1,20 @@
+# problem: return all possible subsets in a linked list - no duplicate results
+
+# input example: nums = [1,2,3]
 
 def sub_sets(self, nums: List[int]) -> List[List[int]]:
         
-        def helper(index, subSet):
+        def helper(index, aSet):
             if index == len(nums):
-                result.append(subSet)
+                subSets.append(aSet)
                 return
             
 
-            helper(subSet + [nums[index]], index + 1)
-            helper(subSet, index + 1)
+            helper(aSet + [nums[index]], index + 1)
+            helper(aSet, index + 1)
         
-        result = []
+        subSets = []
         helper([], 0)
-        return result
+        return subSets
 
+# output example: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
