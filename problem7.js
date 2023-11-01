@@ -1,4 +1,6 @@
 
+// input example: 
+nums = [1, 2, 0]
 
 function 1stMissingPositive(nums) {
     let min = 1
@@ -11,3 +13,5 @@ function 1stMissingPositive(nums) {
     }
     return min
 }
+
+// output: 3
