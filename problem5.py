@@ -23,7 +23,7 @@ class Answer(object)
     point2.next = point2.next.next
     return head
 
-# don't forget moewtest cases
+# don't forget new test cases
 
 
 # output: [1, 2, 3, 5]
