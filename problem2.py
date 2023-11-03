@@ -1,3 +1,6 @@
+# input example
+string = ")()())"
+
 class Answer:
     def longestParentheses(self, string: str) -> int:
         zo = 0
@@ -12,3 +15,5 @@ class Answer:
                 else:
                     zo = max(zo, index - stack[-1])
         return zo
+
+# output example: 4
