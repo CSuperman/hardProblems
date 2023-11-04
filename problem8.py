@@ -1,4 +1,7 @@
-   def KeysforRooms(self, rooms: List[List[int]]) -> bool:
+# example input
+rooms = [[1],[2],[3],[]]
+
+def KeysforRooms(self, rooms: List[List[int]]) -> bool:
         Roomz=len(rooms)
         visitList=[1]*roomz
         que=[0]
@@ -14,3 +17,6 @@
         else:
             print("No, you cannot visit all rooms")
             return False
+
+KeysforRooms(self, rooms)
+# example output: true
