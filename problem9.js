@@ -1,6 +1,13 @@
+/**
+ * @param {TreeNode} root
+ * @return {number[]}
+ */
+
+// Return only the most-right side of a binary tree.
+
 function rightSideTree(root) {
     const result = []
-    const q = []
+    const q = []    // queue
     
     if (root === null) return result;
     
@@ -12,6 +19,7 @@ function rightSideTree(root) {
         for (let idx = 0; idx < size; idx++) {
             let currentPos = q.shift()
 
+            // adds only last element on the level
             if (idx === size - 1) result.push(currentPos.val)
 
             if (currentPos.left !== null) q.push(currentPos.left)
