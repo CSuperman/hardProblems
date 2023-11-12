@@ -1,6 +1,8 @@
 
 const largestN = require('./problem12.js')
 
+// all tests currently fail even though the answer is the right numbers
+
 test('fail:array sorted, output as string', () => {
 	expect(largestN([1, 2, 3, 100, 4, 20])).toEqual(432201100)
 })
