@@ -9,3 +9,8 @@ function minJumps(nums: number[]): number {
     }
     return jumps
 }
+
+
+console.log(minJumps([2, 3, 1, 1, 4]));  // Output: 2
+console.log(minJumps([2, 3, 0, 1, 4]));  // Output: 2
+console.log(minJumps([2, 1, 0, 1, 4]));  // Output: 2
