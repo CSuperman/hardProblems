@@ -35,3 +35,10 @@ var updateMatrix = function (mat) {
     }
     return result;
 };
+
+// I hope you like tests
+const mat1 = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
+const mat2 = [[0, 0, 0], [0, 1, 0], [1, 1, 1]]
+
+console.log(updateMatrix(mat1))     //Output: [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
+console.log(updateMatrix(mat2))     // Output: [[0, 0, 0], [0, 1, 0], [1, 2, 1]]
