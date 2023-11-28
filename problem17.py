@@ -12,4 +12,4 @@ def makeChange(coins, amount):
             i += 1
     return coinTotal
 
-print(makeChange([5, 10, 25], 50))
+print(makeChange([5, 10, 25], 50))  # output: 2
