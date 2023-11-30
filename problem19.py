@@ -8,8 +8,8 @@ def busNumsToLocation(routes, source, target):
     for x, route in enumerate(routes):
         for stop in route:
             for r in route:
-            if stop != r:
-                graph[stop].append(r)
+                if stop != r:
+                    graph[stop].append(r)
 
     visited = set()
     queue = deque([(source, 0)])
@@ -26,3 +26,7 @@ def busNumsToLocation(routes, source, target):
             queue.append((neighbor, buses + 1))
 
     return -1
+
+# Testing 1, 2
+print(busNumsToLocation([[1, 2, 7], [3, 6, 7]], 1, 6))  # Output: 2
+print(busNumsToLocation([[7, 12], [4, 5, 15], [6], [15, 19], [9, 12, 13]], 15, 12))  # Output: -1
