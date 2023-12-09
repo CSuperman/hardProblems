@@ -23,3 +23,7 @@ function evalRPN(tokens: string[]): number {
 
   return stack[0];
 }
+
+console.log(evalRPN(["2","1","+","3","*"])) // output 9
+console.log(evalRPN(["4","13","5","/","+"])) // output 6
+console.log(evalRPN(["10","6","9","3","+","-11","*","/","*","17","+","5","+"])) // output 22
