@@ -13,3 +13,8 @@ const getJumps = (nums) => {
 
     return dp[n - 1];
 }
+
+
+console.log(minJumps([2,3,1,1,4])) // 2
+console.log(minJumps([2,3,0,1,4])) // 2
+console.log(minJumps([2,3,0,1,4,9])) // 3
