@@ -23,7 +23,7 @@ function nerdTourGuide(maze) {
       path += r + ", " + c + " ";
 
       if (r == n - 1 && c == n - 1) {
-        paths.push(path.trim());
+        pathway.push(path.trim());
       } 
 
       else {
@@ -47,8 +47,9 @@ function nerdTourGuide(maze) {
   }
 
   explore(0, 0, visited, "");
-
-  return paths;
+  
+// this solution is a singular pathway
+  return pathway;
 }
 
 let maze = [
