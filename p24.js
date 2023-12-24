@@ -1,7 +1,15 @@
+
+// pathfinding algorithms are common in all AI chasing a player
+// in my opinion one of the best features ever developed in gaming
+// allowing the enemy to hunt the player. The main problem is
+// finding an efficient path...
+
 function nerdTourGuide(maze) {
   let n = maze.length;
 
+// checks if rrows and columns in our matrix are zero
   if (maze[0][0] == 0) {
+    console.log("no pathway through this maze. try another")
     return [];
   }
 
@@ -51,5 +59,5 @@ let maze = [
 ];
 
 console.log(maze)
-console.log(nerdTourGuide(maze));
+console.log("to the Light ", nerdTourGuide(maze));
 
