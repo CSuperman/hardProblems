@@ -34,6 +34,8 @@ function nerdTourGuide(maze) {
       }
 
       visited[r][c] = false;
+      
+      console.log("another way to visualize the path ", visited)
     }
   }
 
