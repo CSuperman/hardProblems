@@ -1,9 +1,12 @@
+// i wanted to merge lists of images and dates into 1 sorted list.
+// the use case was an image carousel sorted by date
+
 class Node {
     constructor(date, imageLink) {
         this.date = date;
         this.imageLink = imageLink;
-        this.next = null
-        this.prev = null;
+        this.next = null    // linked to next carousel button
+        this.prev = null    // linked to previous carousel button
     }
 }
 
