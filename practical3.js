@@ -6,38 +6,41 @@ to binary search for it's efficiency...
 */
 
 var BS = function binarySearch(arr, val) {
-  let low = 0
+  let low = 0;
   let high = arr.length - 1
-  while (low < high) {
-    let mid = Math.floor((low + high) / 2)
 
-    if (arr[mid] >= val) {
-      high = mid
-    } else {
+  while (low <= high) {
+    const mid = Math.floor((low + high) / 2);
+
+    if (arr[mid] === val) {
+      return mid
+    } else if (arr[mid] < val) {
       low = mid + 1
+    } else {
+      high = mid - 1
     }
   }
-  return low;
+
+  return low
 }
 
-
-
 var LIS = function longestIncreasingSubsequence(arr) {
+  const subseq = [];
 
-  let subseq = []
-
- 
- for (let idx = 0; idx < arr.length; idx++) {
-
-    let pos = BS(subseq, arr[idx])
+  for (let idx = 0; idx < arr.length; idx++) {
+    const pos = BS(subseq, arr[idx]);
 
     subseq[pos] = arr[idx]
 
-
-    if (pos == subseq.length) {
-      subseq.push(arr[idx])
-    }
+ 
   }
 
   return subseq.length;
 }
+
+
+arr1 = [ ]
+console.log(LIS(arr1))	// result: 0
+
+arr3 = [1, 1, 1, 1]
+console.log(LIS(arr3)) // result: 1
