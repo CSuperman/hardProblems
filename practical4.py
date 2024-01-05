@@ -14,3 +14,5 @@ nums = [1, 2, 3, 1]
 print(findPeakElement(nums)	# output: 2
 
 print(findPeakElement([3])	# output: 0
+
+print(findPeakElement(null)
