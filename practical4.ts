@@ -22,3 +22,7 @@ function findPeakElement(nums: number[]): number {
 
 const nums = [1, 2, 3, 1]
 console.log(findPeakElement(nums))	// output: 2
+
+// you may have to reset the nums variable before this works
+// const nums = [3]
+// console.log(FPE(nums))	// output: 0
