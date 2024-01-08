@@ -1,3 +1,6 @@
+
+# Basically this algorithm finds mountains with valleys adjacent to it
+
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
         left, right = 0, len(nums) - 1
