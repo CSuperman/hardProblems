@@ -1,3 +1,5 @@
+// problem type: is a subcategory of the category
+
 const canConstruct = (ransomNote, magazine) => {
   const chars = {};
 
